@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*----
+
+             12345
+             12345
+             12345
+             12345
+             12345
+
+        for(let i=1;i<=5;i++) 
+        {
+            for(let j=1;j<=5;j++) 
+            {
+                document.write(j)
+            }
+            document.write("<br>")
+        }
+
+        ------*/
+        
+        /*------
+                1
+                12
+                123
+                1234
+                12345
+        for(let i=1;i<=5;i++)
+        {
+            for(let j=1;j<=i;j++)
+            {
+                document.write(j)
+            }
+            document.write("<br>")
+        }
+        ----*/
+
+        /*----
+
+                1
+                22
+                333
+                4444
+                55555
+        for(let i=1;i<=5;i++)
+        {
+            for(let j=1;j<=i;j++)
+            {
+                document.write(i)
+            }
+            document.write("<br>")
+        }
+        --------*/
+
+        /*----
+            1
+            23
+            456
+            78910
+        let n=1,star=1
+        for(let i=1;i<=4;i++)
+        {
+            for(let j=1;j<=star;j++)
+            {
+                document.write(n)
+                n=n+1
+            }
+            document.write("<br>")
+            star++
+        }
+        -------*/
+
+        /*-----
+                1234
+                5678
+                9101112
+                13141516
+        let n=1
+        for(let i=1;i<=4;i++)
+        {
+            for(let j=1;j<=4;j++)
+            {
+                document.writeln(n)
+                n=n+1
+            }
+            document.write("<br>")
+        }
+        ------*/
+
+        /*----
+            1
+            2  4
+            8  16  32
+            64 128 256 512
+        let n=1,star=1
+        for(let i=1;i<=4;i++)
+        {
+            for(let j=1;j<=star;j++)
+            {
+                document.writeln(n)
+                n=n*2
+            }
+            document.write("<br>")
+            star++
+        }
+        -----*/
+
+        /*----
+             12345
+             1234
+             123
+             12
+             1
+        let star=5,n=1
+        for(let i=1;i<=5;i++)
+        {
+            for(let j=1;j<=star;j++)
+            {
+                document.write(j)
+                n=n-1
+            }
+            document.write("<br>")
+            star--
+        }
+        -----*/
+
+
+        for(let i=1;i<=5;i++)
+        {
+            for(let j=1;j<=5;j++)
+            {
+                
+                if((i==3) || (j==3) || (j==1 && i<=3) || (i==5 && j<=3) || (i==1 && j>=3) || (j==5 && i>=3))
+                {
+                    document.write("*")
+                }
+                else{
+                    document.writeln("&nbsp")
+                }
+                
+                
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>
